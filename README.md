@@ -6,6 +6,10 @@
 
 🚨 A simple tool to check multiple Steam Profile URL's for VAC bans from a .txt file
 
+# Why I created this?
+
+When doing Overwatch cases in CS:GO, I tend to save the steam profiles of the suspects to check them later if they got banned or not.
+
 # How to use
 
 1. Edit `steam_urls.txt` and add a Steam Profile URL on each line
