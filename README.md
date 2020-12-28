@@ -14,7 +14,7 @@ When doing Overwatch cases in CS:GO, I tend to save the steam profiles of the su
 
 1. Edit `.profiles/steam_urls.txt` and add a Steam Profile URL on each line
 2. In the project folder, run `npm install` to install the necessary modules.
-3. finally, run `node index.js` and it will return if a Steam Profile is VAC banned or not. See image above.
+3. Finally, run `node index.js` and it will return if a Steam Profile is VAC banned or not. See image above.
 
 # Example of a proper steam_urls.txt file
 
