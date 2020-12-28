@@ -4,7 +4,7 @@ const lineReader = require("line-reader");
 const { join } = require("path");
 
 // --| Read the file with Steam Profile URL's
-const fileSteamURL = join(__dirname, "steam_urls.txt");
+const fileSteamURL = join(__dirname, "/profiles/steam_urls.txt");
 
 // --| Custom regex to match the official Steam Profile URL
 const isSteamProfileURL = /(?:https?:\/\/)?steamcommunity\.com\/(?:profiles|id)\/[a-zA-Z0-9]+/;
