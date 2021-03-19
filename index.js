@@ -9,6 +9,15 @@ const fileSteamURL = join(__dirname, "/profiles/steam_urls.txt");
 // --| Custom regex to match the official Steam Profile URL
 const isSteamProfileURL = /(?:https?:\/\/)?steamcommunity\.com\/(?:profiles|id)\/[a-zA-Z0-9]+/;
 
+// --| Check if the file is empty first
+lineReader.open(fileSteamURL, (err, reader) =>
+{
+    if(!reader.hasNextLine())
+    {
+        console.log(`❌ \x1b[31mStopped!\x1b[0m ${fileSteamURL} does not contain any URL's!`);
+    }
+});
+
 // --| Read each line
 lineReader.eachLine(fileSteamURL, (line, last) =>
 {
@@ -27,7 +36,7 @@ lineReader.eachLine(fileSteamURL, (line, last) =>
         const checkVAC = $(".profile_ban").text().trim();
 
         // --| Check if profile is VAC banned
-        if(checkVAC.includes("Multiple VAC bans on record") || checkVAC.includes(" VAC ban on record"))
+        if(checkVAC.includes("Multiple VAC bans on record") || checkVAC.includes("VAC ban on record"))
         {
             console.log(`🚨 Profile URL: \x1b[34m${line}\x1b[0m is \x1b[31mVAC banned\x1b[0m.`);
         }
