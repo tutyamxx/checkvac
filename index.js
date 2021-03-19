@@ -14,7 +14,7 @@ lineReader.open(fileSteamURL, (err, reader) =>
 {
     if(!reader.hasNextLine())
     {
-        console.log(`❌ \x1b[31mStopped!\x1b[0m ${fileSteamURL} does not contain any URL's!`);
+        console.log(`❌ \x1b[31mStopped!\x1b[0m \x1b[33m${fileSteamURL}\x1b[0m does not contain any URL's!`);
     }
 });
 
