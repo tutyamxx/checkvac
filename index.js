@@ -41,6 +41,7 @@ lineReader.eachLine(fileSteamURL, (line, last) =>
             console.log(`🚨 Profile URL: \x1b[34m${line}\x1b[0m is \x1b[31mVAC banned\x1b[0m.`);
         }
 
+        // --| Usually the user is VAC banned
         else
         {
             console.log(`✅ Profile URL: \x1b[34m${line}\x1b[0m is \x1b[32mclean\x1b[0m.`);
