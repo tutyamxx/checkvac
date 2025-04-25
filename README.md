@@ -1,27 +1,47 @@
-<p align="center">
-  <img src="https://i.imgur.com/2SODyxU.png"><br/>
-</p>
+# Steam Profile Checker 🚀
 
-# Check Steam Profile URL VAC status
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-🚨 A simple tool to check multiple Steam Profile URL's for VAC bans from a .txt file
+A simple Node.js script to check Steam profiles for VAC bans. 🕵️‍♂️
 
-# Why I created this?
+## Features ✨
 
-When doing Overwatch cases in CS:GO, I tend to save the steam profiles of the suspects to check them later if they got banned or not.
+*   **Bulk Checking:** Processes a list of Steam profile URLs from a text file. 📝
+*   **VAC Ban Detection:**  Accurately identifies profiles with VAC bans. 🚫
+*   **Clear Output:** Provides easy-to-understand results in the console. ✅ ❌
+*   **Efficient Processing:**  Designed for fast and reliable checking. 💨
+*   **Customizable:** Easily modify the input file and output format. ⚙️
 
-# How to use
+## Prerequisites 🛠️
 
-1. Edit `.profiles/steam_urls.txt` and add a Steam Profile URL on each line
-2. In the project folder, run `npm install` to install the necessary modules.
-3. Finally, run `node index.js` and it will return if a Steam Profile is VAC banned or not. See image above.
+*   **Node.js:**  Version 16 or higher is recommended.  [https://nodejs.org/](https://nodejs.org/)
+*   **npm or yarn:** Node package manager.
 
-# Example of a proper steam_urls.txt file
+## Installation 📦
 
-```bash
-https://steamcommunity.com/id/somerandomidname
-https://steamcommunity.com/profiles/12345678901234567/
-https://steamcommunity.com/id/teststeamprofile
-https://www.youtube.com/
-https://www.reddit.com/r/Steam/
-```
+1.  Clone the repository:
+
+    ```bash
+    git clone https://github.com/your-username/steam-profile-checker.git
+    cd steam-profile-checker
+    ```
+
+2.  Install dependencies:
+
+    ```bash
+    npm install  # or yarn install
+    ```
+
+## Usage 💻
+
+1.  **Create a text file** (e.g., `profiles/steam_urls.txt`) containing a list of Steam profile URLs, one URL per line.
+
+2.  **Run the script:**
+
+    ```bash
+    node index.js
+    ```
+
+3.  **View the results** in your console.  Clean profiles will be marked with ✅, and VAC banned profiles will be marked with 🚨.
+
+## Example `profiles/steam_urls.txt`
