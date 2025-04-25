@@ -1,6 +1,12 @@
 # Steam Profile Checker 🚀
 
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<p align="center">
+  <img src="https://img.shields.io/badge/License-MIT-yellow.svg">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/2SODyxU.png"><br/>
+</p>
 
 A simple Node.js script to check Steam profiles for VAC bans. 🕵️‍♂️
 
